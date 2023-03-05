@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #252839;
+    margin: 40px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    background-image: url(background.svg);
+}
+
+.area-login{
+    margin-left: 305px;
+}
+main {
+    margin: 20px;
+}
+       ---------------LOG IN-----------------
+.area-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: right;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #30375e;
+
+    border-radius: 15px;
+    width: 355px;
+    height: 260px;
+    padding: 35px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login input {
+    margin-top: 10px;
+    background-color: #252A34;
+    padding-left: 10px;
+    color: #CBD0F7;
+    border: none;
+    height: 30px;
+    width: 250px;
+    outline: none;
+
+    border-radius: 8px;
+}
+
+.login img {
+    width: 65px;
+    height: auto;    
+}
+
+input::placeholder {
+    color: #CBD0F7;
+    font-size: 14px;
+}
+
+form [type="submit"] {
+    display: block;
+    background-color: #5568FE;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+p {
+    margin-top: 10px;
+    color: #CBD0F7;
+}
+
+a {
+    color: #5568FE;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+
+header {
+    height: 300px;
+    width: 200px;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+
+ul li a {
+    font-size: 2em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}

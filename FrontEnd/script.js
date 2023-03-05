@@ -28,7 +28,7 @@ function addInput(){
     habit.type = "text";
     habit.placeholder = "Enter your habit";
 
-    const checkbx = document.createElement("checkbox");
+    const checkbx = document.createElement("input");
     checkbx.setAttribute("type", "checkbox");
     
     const btn= document.createElement("a");
