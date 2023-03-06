@@ -2,30 +2,197 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
     display: flex;
     align-items: flex-start;
     min-height: 100vh;
-    background: #252839;
-    margin: 40px;
-    overflow: hidden;
+    background: #359fba;
+    margin: 40px 40px 0px 40px;
     flex-direction: column;
+
+    align-items: center;
 }
 
 .container {
     display: flex;
     background-image: url(background.svg);
+    width: 90%;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .area-login{
     margin-left: 305px;
+    margin-top: 40px;
 }
 main {
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+.About {
+    margin-top: 150px;
+
+    background-image: url(background.svg);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background-color: #313445;
+    width: 90%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.About H1 {
+    color: white;
+    margin-top: 20px;
+    font-family: "Varela Round", sans-serif;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-size: 40px;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+}
+
+.team img {
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.team p {
+    margin-left: 20px;
+    line-height: 28px;
+    font-size: 14px;
+    color: white;
+}
+
+.Goals {
+    margin-top: 150px;
+
+    background-image: url(background.svg);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background-color: #313445;
+    width: 90%;
+    border-radius: 15px 15px 15px 15px;
+}
+.Goals h1 {
+    color: white;
+    margin-top: 20px;
+    font-family: "Varela Round", sans-serif;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-size: 40px;
+}
+
+.FirstGoal {
+    margin-top: 20px;
+    color: white;
+}
+
+.SecondGoal {
+    margin-top: 20px;
+    color: white;
+}
+
+.ThirdGoal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.card {
+    width: 480px;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    overflow: visible;
+    margin-bottom: 20px;
+   }
+   
+   .card .item {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .item:hover {
+    transform: scale(0.95);
+    transition: all 0.3s;
+   }
+   
+   .item svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 7px;
+   }
+   
+   .item--1 {
+    background: #c7c7ff;
+   }
+   
+   .item--2 {
+    background: #ffd8be;
+   }
+   
+   .item--3 {
+    background: #a9ecbf;
+   }
+   
+   .item--4 {
+    background: #f3bbe1;
+   }
+   
+   .quantity {
+    font-size: 25px;
+    font-weight: 600;
+   }
+   
+   .text {
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 600;
+   }
+   
+   .text--1 {
+    color: rgba(149,149,255,1);
+   }
+   
+   .text--2 {
+    color: rgba(252,161,71,1);
+   }
+   
+   .text--3 {
+    color: rgba(66,193,110,1);
+   }
+   
+   .text--4 {
+    color: rgba(220,91,183,1);
+   }
+
+
        ---------------LOG IN-----------------
 .area-login {
     display: flex;
@@ -90,6 +257,7 @@ form [type="submit"] {
 p {
     margin-top: 10px;
     color: #CBD0F7;
+    font-size: 12px;
 }
 
 a {
@@ -103,6 +271,7 @@ a {
 header {
     height: 300px;
     width: 200px;
+    margin-top: 40px;
 }
 
 ul {
@@ -142,4 +311,109 @@ ul li a::before {
 ul li a:hover::before {
     width: 100%;
     filter: drop-shadow(0 0 25px var(--clr));
+}
+
+
+footer {
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: white;
+
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+.footer-content {
+    margin-top: 150px;
+    background-image: url(background.svg);
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+
+    color: white;
+    margin-top: 20px;
+    font-family: "Varela Round", sans-serif;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-size: 40px;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: white;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 30px 0px;
+
+    flex-direction: row;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+#Facebook,
+#Twitter,
+#LinkedIn {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+#Facebook {
+  background-image: url('http://paksef.com/wp-content/uploads/2015/08/facebook-icon-hover.png');
+}
+#Facebook:hover {
+  background-image: url('http://paksef.com/wp-content/uploads/2015/08/facebook-icon.png');
+}
+#Twitter {
+  background-image: url('http://paksef.com/wp-content/uploads/2015/08/twitter-icon-hover.png');
+}
+#Twitter:hover {
+  background-image: url('http://paksef.com/wp-content/uploads/2015/08/twitter-icon.png');
+}
+#LinkedIn {
+  background-image: url('http://paksef.com/wp-content/uploads/2015/08/Linkedin-icon-hover.png');
+}
+#LinkedIn:hover {
+  background-image: url('http://paksef.com/wp-content/uploads/2015/08/Linkedin-icon.png');
+}
+
+.footer-bottom {
+    background: #252A34;
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
 }
