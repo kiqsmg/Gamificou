@@ -12,7 +12,7 @@
 
 
 body {
-    background: linear-gradient(287.56deg, #C2E9FB 0%, #fc2c77 100%);
+    background-image: url(background.svg);
     font-size: 1.6rem;
 
     display: grid;

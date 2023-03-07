@@ -16,6 +16,7 @@ var xp = 0;                                                    // Var representi
 var xpString = toString(xp);
 
 
+
 // -------------------------- Fuctions --------------------------
 function removeInput(){
     numCheckbox -= 1 ;
