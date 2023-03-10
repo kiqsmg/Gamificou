@@ -25,8 +25,10 @@ const validUsers = {
 
 function checkLogin(username, password) {
     if (validUsers[username] === password) {
+        window.location.href = 'index.html';
         alert('Login successful');
         return true;
+        
     } else {
         alert('Invalid usernam or password');
         return false;
