@@ -1,2 +1,2 @@
-# checkbox_project
+# Gamificou_project
 A habit tracker project made by students for students.
